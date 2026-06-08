@@ -1,0 +1,54 @@
+/* Static Box ничего не меняется , распологается в соответсвии потоком документа */
+.static-box {
+    background-color: lightblue;
+    position: static;
+    margin: 20px;
+}
+
+/* Relative Box смещается относительно своего нормального положения */
+.relative-box {
+    background-color: lightgreen;
+    position: relative;
+    top: 20px; 
+    left: 20px;
+    right: 100px;
+    bottom: 40px;
+}
+
+/* Absolute Box смещается относительно ближайшего позиционированного предка (в данном случае контейнера) */
+.absolute-box {
+    background-color: lightcoral;
+    position: absolute;
+    top: 0px; 
+    left: 0px;
+}
+.container {
+    background-color: rgb(164, 22, 22);
+    position: relative;
+    top: 50px;
+    width: 300px;
+    height: 200px;
+}
+
+/* Fixed Box смещается относительно окна браузера и остается на месте при прокрутке */
+.fixed-box {
+    background-color: lightyellow;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+/* Sticky Box остается на месте при прокрутке до указанного места */
+.sticky-box {
+    background-color: lightpink;
+    position: sticky;
+    top: 100px;
+    color: black;
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+    margin-top: 200px;
+}
+.space {
+    height: 1000px;
+}
